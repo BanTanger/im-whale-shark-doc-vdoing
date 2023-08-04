@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/IM-WhaleShark.png
-heroText: vuepress-theme-vdoing
+heroText: IM-WhaleShark
 tagline: 🚀IM-WhaleShark 架构设计文档主题
 actionText: 开始使用 →
 actionLink: /pages/a2f161/

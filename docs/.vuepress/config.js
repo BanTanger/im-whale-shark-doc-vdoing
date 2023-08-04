@@ -24,24 +24,17 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '指南', link: '/pages/a2f161/', items: [
+        text: '指南', link: '/pages/1af5a1/', items: [
           { text: '主题初衷与诞生', link: '/pages/52d5c3/' },
           { text: '介绍', link: '/pages/a2f161/' },
-          { text: '快速上手', link: '/pages/793dcb/' },
-          { text: '目录结构', link: '/pages/2f674a/' },
-          { text: '核心配置和约定', link: '/pages/33d574/' },
-          { text: '自动生成front matter', link: '/pages/088c16/' },
-          { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
-          { text: 'Markdown 中使用组件', link: '/pages/197691/' },
+          { text: '快速上手: 服务器部署', link: '/pages/a3f505/' },
+          { text: '快速上手: 本地部署', link: '/pages/5b5bb3/' },
           {
             text: '相关文章', items: [
-              { text: '使目录栏支持h2~h6标题', link: '/pages/8dfab5/' },
-              { text: '如何让你的笔记更有表现力', link: '/pages/dd027d/' },
-              { text: '批量操作front matter工具', link: '/pages/2b8e22/' },
-              { text: '部署', link: '/pages/0fc1d2/' },
-              { text: '关于写文章和H1标题', link: '/pages/9ae0bd/' },
-              { text: '关于博客搭建与管理', link: '/pages/26997d/' },
-              { text: '在线编辑和新增文章的方法', link: '/pages/c5a54d/' },
+              { text: '消息同步模型', link: '/pages/3b37d3/' },
+              { text: '消息可靠性模型', link: '/pages/5848e5/' },
+              { text: '消息幂等性模型', link: '/pages/e9d894/' },
+              { text: '消息有序性模型', link: '/pages/8c8e6d/' },
             ]
           }
         ]
@@ -58,13 +51,10 @@ module.exports = {
         ]
       },
       { text: '资源', link: '/pages/db78e2/' },
-      { text: '案例', link: '/pages/5d571c/' },
-      { text: '问答', link: '/pages/9cc27d/' },
-      { text: '赞助', link: '/pages/1b12ed/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'bantanger/im-whale-shark', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
 
@@ -95,8 +85,8 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
-      href: 'https://github.com/xugaoyi' // 可选的
+      name: 'BanTanger | 半糖', // 必需
+      href: 'https://github.com/bantanger' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -109,7 +99,7 @@ module.exports = {
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi'
+          link: 'https://github.com/bantanger'
         },
         {
           iconClass: 'icon-erji',
@@ -119,8 +109,8 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | MIT License', // 博客版权信息，支持a标签
+      createYear: 2023, // 博客创建年份
+      copyrightInfo: 'BanTanger | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
   },

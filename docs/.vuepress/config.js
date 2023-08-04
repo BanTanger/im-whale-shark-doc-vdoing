@@ -149,6 +149,28 @@ module.exports = {
       }
     ],
 
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'gitalk', 
+        options: {
+          clientID: '34c192dca064185ce955',  // 你的client ID
+          clientSecret: '2fe5d509938e83d1445645ec7bb636833503b5df',  // 你的client secret
+           repo: 'im-whale-shark-doc-vdoing', // GitHub 仓库
+            owner: 'BanTanger', // GitHub仓库所有者
+            admin: ['BanTanger'], // 对仓库有写权限的人
+            // distractionFreeMode: true,
+            pagerDirection: 'last', // 'first'正序 | 'last'倒序
+            // 下面的不用修改，默认这些即可
+            id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+            title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+            labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+            body:
+              '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+        }
+      }
+    ],
+
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
       copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'

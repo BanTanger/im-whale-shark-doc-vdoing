@@ -25,7 +25,6 @@ module.exports = {
       { text: '首页', link: '/' },
       {
         text: '指南', link: '/pages/1af5a1/', items: [
-          { text: '主题初衷与诞生', link: '/pages/52d5c3/' },
           { text: '介绍', link: '/pages/a2f161/' },
           { text: '快速上手: 服务器部署', link: '/pages/a3f505/' },
           { text: '快速上手: 本地部署', link: '/pages/5b5bb3/' },

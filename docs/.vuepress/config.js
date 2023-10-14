@@ -35,18 +35,6 @@ module.exports = {
           }
         ]
       },
-      {
-        text: '配置', link: '/pages/a20ce8/', items: [
-          { text: '主题配置', link: '/pages/a20ce8/' },
-          { text: '首页配置', link: '/pages/f14bdb/' },
-          { text: 'front matter配置', link: '/pages/3216b0/' },
-          { text: '目录页配置', link: '/pages/54651a/' },
-          { text: '添加摘要', link: '/pages/1cc523/' },
-          { text: '修改主题颜色和样式', link: '/pages/f51918/' },
-          { text: '评论栏', link: '/pages/ce175c/' },
-        ]
-      },
-      { text: '资源', link: '/pages/db78e2/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo

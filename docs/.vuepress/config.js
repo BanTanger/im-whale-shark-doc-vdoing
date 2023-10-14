@@ -14,9 +14,6 @@ module.exports = {
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
 
   // 主题配置
@@ -91,20 +88,10 @@ module.exports = {
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
-          iconClass: 'icon-youjian',
-          title: '发邮件',
-          link: 'mailto:894072666@qq.com'
-        },
-        {
           iconClass: 'icon-github',
           title: 'GitHub',
           link: 'https://github.com/bantanger'
         },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173'
-        }
       ]
     },
     footer: { // 页脚信息
@@ -151,21 +138,21 @@ module.exports = {
     [
       'vuepress-plugin-comment',
       {
-        choosen: 'gitalk', 
+        choosen: 'gitalk',
         options: {
           clientID: '34c192dca064185ce955',  // 你的client ID
           clientSecret: '2fe5d509938e83d1445645ec7bb636833503b5df',  // 你的client secret
-           repo: 'im-whale-shark-doc-vdoing', // GitHub 仓库
-            owner: 'BanTanger', // GitHub仓库所有者
-            admin: ['BanTanger'], // 对仓库有写权限的人
-            // distractionFreeMode: true,
-            pagerDirection: 'last', // 'first'正序 | 'last'倒序
-            // 下面的不用修改，默认这些即可
-            id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-            title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-            labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-            body:
-              '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+          repo: 'im-whale-shark-doc-vdoing', // GitHub 仓库
+          owner: 'BanTanger', // GitHub仓库所有者
+          admin: ['BanTanger'], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+          // 下面的不用修改，默认这些即可
+          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+          body:
+            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
         }
       }
     ],
